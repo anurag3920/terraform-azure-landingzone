@@ -25,6 +25,7 @@ jobs:
 
       - name: Terraform Validate
         run: terraform validate
+<<<<<<< HEAD
         name: Terraform Apply
 
 on:
@@ -54,3 +55,5 @@ jobs:
       - run: terraform init
 
       - run: terraform apply -auto-approve
+=======
+>>>>>>> 3c9a784d2a8962437c681b5671f95466a2560b9e

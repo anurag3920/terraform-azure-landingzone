@@ -1,9 +1,10 @@
 name: Terraform CI
 
 on:
-  pull_request:
+  push:
     branches:
       - main
+      - feature/lz-vnet
 
 jobs:
   terraform:
@@ -24,4 +25,3 @@ jobs:
 
       - name: Terraform Validate
         run: terraform validate
-``
